@@ -28,7 +28,8 @@ class   BenimUyg extends StatelessWidget {
                Text("bir fincan uzaginda ",
 
               style: TextStyle(fontFamily:"elyazisifontu",fontSize: 20,color: Colors.white),),
-              Container(
+              Divider(height: 10,color:Colors.brown ,),//arada bosluk icin
+              Card(
                 margin: EdgeInsets.symmetric(horizontal: 15),
                 color: Colors.brown[900],
                 child: Row(
@@ -38,18 +39,13 @@ class   BenimUyg extends StatelessWidget {
 Text("for order kahvecimurat@gmai.com",style:TextStyle(color: Colors.white,fontSize: 20),)
                 ],
               ),),
-                SizedBox(height: 10,),
-                Container(
+                SizedBox(height: 10,), //araalrda bosluk icin kullandim
+                Card(
 
                   margin: EdgeInsets.symmetric(horizontal: 15),
                   color: Colors.brown[900],
-                  child: Row(
-                    children: [
-                      Icon(Icons.perm_phone_msg,size: 40,color: Colors.white,),SizedBox(width: 10
-                        ,),
-                      Text("for order by phone444-44-44",style:TextStyle(color: Colors.white,fontSize: 20),)
-                    ],
-                  ),)
+                  child:ListTile(leading: Icon(Icons.perm_phone_msg,size: 40,color: Colors.white,) ,
+                      title: Text("for order by phone444-44-44",style:TextStyle(color: Colors.white,fontSize: 20),),),)
               ],),
           ),
         ),
@@ -57,5 +53,4 @@ Text("for order kahvecimurat@gmai.com",style:TextStyle(color: Colors.white,fontS
     );
   }
 }
-
 
